@@ -283,6 +283,12 @@ MonoBehaviour:
   CylinderButton: {fileID: 471673508}
   DeleteButton: {fileID: 18467245}
   SelectButton: {fileID: 934814025}
+  PlusX: {fileID: 990875987}
+  MinusX: {fileID: 1509875851}
+  PlusY: {fileID: 1566956009}
+  MinusY: {fileID: 1236163390}
+  PlusZ: {fileID: 1686357328}
+  MinusZ: {fileID: 367011040}
   ToggleText: {fileID: 1512757726}
 --- !u!4 &95644450
 Transform:

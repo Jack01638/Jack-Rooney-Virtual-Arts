@@ -21,8 +21,17 @@ public class BlockScript : MonoBehaviour
     public Button DeleteButton;
     public Button SelectButton;
 
-    public TextMeshProUGUI ToggleText;
+    public Button PlusX;
+    public Button MinusX;
+    public Button PlusY;
+    public Button MinusY;
+    public Button PlusZ;
+    public Button MinusZ;
 
+    public TextMeshProUGUI ToggleText;
+    private GameObject SelectedObject;
+
+    bool clicked = false;
 
     private void Update()
     {
@@ -68,8 +77,18 @@ public class BlockScript : MonoBehaviour
                 {
                     string objectname = raycastHit.collider.gameObject.name;
                     Debug.Log(objectname);
-                    //raycastHit.collider.gameObject.SetActive(false);
                     Destroy(raycastHit.transform.gameObject);
+                }
+
+                if (raycastHit.collider.tag == "Block" && SelectedFunction == "select")
+                {
+                    string objectname = raycastHit.collider.gameObject.name;
+                    Debug.Log(objectname);
+                    SelectedObject = raycastHit.transform.gameObject;
+    
+                   // Vector3 newScale = SelectedObject.transform.localScale;
+                    //newScale.x += 2f;
+                   // SelectedObject.transform.localScale = newScale;
                 }
 
             }
@@ -87,7 +106,16 @@ public class BlockScript : MonoBehaviour
         DeleteButton.onClick.AddListener(() => DeleteButtonPress());
         SelectButton.onClick.AddListener(() => SelectButtonPress());
 
+        
+        PlusX.onClick.AddListener(() => Scale(SelectedObject, "X","P"));
+        MinusX.onClick.AddListener(() => Scale(SelectedObject, "X", "N"));
+        PlusY.onClick.AddListener(() => Scale(SelectedObject, "Y", "P"));
+        MinusY.onClick.AddListener(() => Scale(SelectedObject, "Y", "N"));
+        PlusZ.onClick.AddListener(() => Scale(SelectedObject, "Z", "P"));
+        MinusZ.onClick.AddListener(() => Scale(SelectedObject, "Z", "N"));
 
+        clicked = false;
+        
     }
 
     //button press functions
@@ -132,4 +160,56 @@ public class BlockScript : MonoBehaviour
         }
     }
 
+    //pass in the object being scaled, which axis to scale on and if its +ve or -ve
+    
+    void Scale(GameObject tempObject, string axis, string sign)
+    {
+        if (!clicked)
+        {
+            Vector3 newScale = tempObject.transform.localScale;
+            if (axis == "X")
+            {
+                if (sign == "P")
+                {
+                    newScale.x += 1.0f;
+                }
+                if (sign == "N")
+                {
+                    newScale.x -= 1.0f;
+                }
+            }
+
+            if (axis == "Y")
+            {
+                if (sign == "P")
+                {
+                    newScale.y += 1.0f;
+                }
+                if (sign == "N")
+                {
+                    newScale.y -= 1.0f;
+                }
+            }
+
+            if (axis == "Z")
+            {
+                if (sign == "P")
+                {
+                    newScale.z += 1.0f;
+                }
+                if (sign == "N")
+                {
+                    newScale.z -= 1.0f;
+                }
+            }
+
+            tempObject.transform.localScale = newScale;
+
+            //end here
+            clicked = true;
+            
+        }
+        
+    }
+    
 }
