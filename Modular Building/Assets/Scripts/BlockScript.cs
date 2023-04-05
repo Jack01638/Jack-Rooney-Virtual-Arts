@@ -26,6 +26,8 @@ public class BlockScript : MonoBehaviour
 
     private void Update()
     {
+        //check if clicking on any UI objects or not
+        bool OverUI = false;
         //detecting where mouse is
         //Debug.Log(Input.mousePosition);
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -37,7 +39,7 @@ public class BlockScript : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 //Debug.Log("Left Click");
-                if (ToggleStatus == true && SelectedFunction == "place")
+                if (ToggleStatus == true && SelectedFunction == "place" && OverUI == false)
                 {
                     switch (ActiveBlock)
                     {
@@ -66,7 +68,8 @@ public class BlockScript : MonoBehaviour
                 {
                     string objectname = raycastHit.collider.gameObject.name;
                     Debug.Log(objectname);
-                    raycastHit.collider.gameObject.SetActive(false);
+                    //raycastHit.collider.gameObject.SetActive(false);
+                    Destroy(raycastHit.transform.gameObject);
                 }
 
             }
