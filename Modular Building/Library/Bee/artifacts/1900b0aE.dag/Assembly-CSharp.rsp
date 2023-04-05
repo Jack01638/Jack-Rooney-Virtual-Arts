@@ -353,6 +353,7 @@
 "Assets/Scripts/BlockDrag.cs"
 "Assets/Scripts/BlockScript.cs"
 "Assets/Scripts/CameraScript.cs"
+"Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/PlayerCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
