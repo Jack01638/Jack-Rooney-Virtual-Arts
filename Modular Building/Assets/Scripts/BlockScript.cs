@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class BlockScript : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class BlockScript : MonoBehaviour
     private string SelectedFunction = "place"; //default is to place blocks
     bool clicked = false; //helps allow only 1 click of buttons at a time
     bool firstSelect = true; //used to help toggle selected block material
+    bool OverUI = false; //check if clicking on UI
 
     [Header("Object Buttons")]
     public Button CubeButton;
@@ -50,21 +52,24 @@ public class BlockScript : MonoBehaviour
 
     private void Update()
     {
+
         //detecting where the mouse is
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
-            if (raycastHit.transform.tag == "UI")
-            {
-                Debug.Log("UI HIT");
-            }
             //moving visual mouse pointer
             transform.position = raycastHit.point;
             //check for left click
             if (Input.GetMouseButtonDown(0))
             {
+                //check if clickign on UI
+                if (EventSystem.current.IsPointerOverGameObject())
+                {
+                    OverUI = true;
+                    //Debug.Log("UI HIT");
+                }
                 //Debug.Log("Left Click");
-                if (ToggleStatus == true && SelectedFunction == "place") //dynamic gravity blocks
+                if (ToggleStatus == true && SelectedFunction == "place" && OverUI == false) //dynamic gravity blocks
                 {
                     //if placed on the ground, place where user is looking
                     if (raycastHit.transform.tag == "Ground")
@@ -106,7 +111,7 @@ public class BlockScript : MonoBehaviour
                         }
                     }
                 }
-                if (ToggleStatus == false && SelectedFunction == "place") //static non gravity blocks
+                if (ToggleStatus == false && SelectedFunction == "place" && OverUI == false) //static non gravity blocks
                 {
                     if (raycastHit.transform.tag == "Ground")
                     {
@@ -123,7 +128,7 @@ public class BlockScript : MonoBehaviour
                                 break;
                         }
                     }
-                    else if (raycastHit.transform.tag != "Ground")
+                    else if (raycastHit.transform.tag != "Ground" && OverUI == false)
                     {
                         //find center of block face
                         Vector3 position = raycastHit.transform.position + raycastHit.normal;
@@ -151,7 +156,7 @@ public class BlockScript : MonoBehaviour
                 }
 
                 //deleting blocks
-                if (raycastHit.collider.tag == "Block" && SelectedFunction == "delete")
+                if (raycastHit.collider.tag == "Block" && SelectedFunction == "delete" && OverUI == false)
                 {
                     //string objectname = raycastHit.collider.gameObject.name;
                     //Debug.Log(objectname);
@@ -159,11 +164,11 @@ public class BlockScript : MonoBehaviour
                 }
 
                 //selecting blocks
-                if (raycastHit.collider.tag == "Block" && SelectedFunction == "select")
+                if (raycastHit.collider.tag == "Block" && SelectedFunction == "select" && OverUI == false)
                 {
 
                     //string objectname = raycastHit.collider.gameObject.name;
-                    Debug.Log(firstSelect);
+                    //Debug.Log(firstSelect);
                     
                     if (firstSelect == true) //if its first time selected, just set to selected block
                     {
@@ -207,6 +212,7 @@ public class BlockScript : MonoBehaviour
         MinusZ.onClick.AddListener(() => Scale(SelectedObject, "Z", "N"));
 
         clicked = false; //Reset clicked value to allow future button presses
+        OverUI = false; //reset OverUI
         
     }
 

@@ -30,7 +30,7 @@ public class BlockDrag : MonoBehaviour
     {
         //stop it going through the floor
         float pointer_y = Pointer.transform.position.y;
-        if (pointer_y > 0.8f) //only move if above ground and not through floor
+        if (pointer_y > 0.3f) //only move if above ground and not through floor (blocks can be up to 0.5 small)
         {
             transform.position = GetMouseAsWorldPoint() + mouseOffset;
         } 
