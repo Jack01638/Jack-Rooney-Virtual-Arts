@@ -12,6 +12,9 @@ public class BlockScript : MonoBehaviour
     public GameObject Cylinder;
     public GameObject CubeStatic;
     public GameObject CylinderStatic;
+    public GameObject SphereStatic;
+    public GameObject Sphere;
+
     private string ActiveBlock = "Cube"; //this will hold which block to place depending on button pressed. by default its Cube
     private bool ToggleStatus = true;
     private string SelectedFunction = "place"; //default is to place blocks
@@ -20,6 +23,7 @@ public class BlockScript : MonoBehaviour
     public Button CylinderButton;
     public Button DeleteButton;
     public Button SelectButton;
+    public Button SphereButton;
 
     public Button PlusX;
     public Button MinusX;
@@ -50,26 +54,88 @@ public class BlockScript : MonoBehaviour
                 //Debug.Log("Left Click");
                 if (ToggleStatus == true && SelectedFunction == "place" && OverUI == false)
                 {
-                    switch (ActiveBlock)
+                    //if placed on the ground, place where looking
+                    if (raycastHit.transform.tag == "Ground")
+                        switch (ActiveBlock)
+                        {
+                            case "Cube":
+                                Instantiate(Cube, new Vector3(raycastHit.point.x, raycastHit.point.y + 0.5f, raycastHit.point.z), Quaternion.identity);
+                                break;
+                            case "Cylinder":
+                                Instantiate(Cylinder, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
+                                break;
+                            case "Sphere":
+                                Instantiate(Sphere, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
+                                break;
+                        }
+                    else 
                     {
-                        case "Cube":
-                            Instantiate(Cube, new Vector3(raycastHit.point.x, raycastHit.point.y + 0.5f, raycastHit.point.z), Quaternion.identity);
-                            break;
-                        case "Cylinder":
-                            Instantiate(Cylinder, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
-                            break;
+                        //find center of block face
+                        Vector3 position = raycastHit.transform.position + raycastHit.normal;
+                        //find block rotation
+                        Quaternion rotation = Quaternion.FromToRotation(Vector3.up, raycastHit.normal);
+                        switch (ActiveBlock)
+                        {
+                            case "Cube":
+                                Cube.transform.position = position;
+                                Cube.transform.rotation = rotation;
+                                Instantiate(Cube, position, rotation);
+                                break;
+                            case "Cylinder":
+                                Cylinder.transform.position = position;
+                                Cylinder.transform.rotation = rotation;
+                                Instantiate(Cylinder, position, rotation);
+                                break;
+                            case "Sphere":
+                                Sphere.transform.position = position;
+                                Sphere.transform.rotation = rotation;
+                                Instantiate(Sphere, position, rotation);
+                                
+                                break;
+                        }
                     }
                 }
-                if (ToggleStatus == false && SelectedFunction == "place")
+                if (ToggleStatus == false && SelectedFunction == "place" && OverUI == false)
                 {
-                    switch (ActiveBlock)
+                    if (raycastHit.transform.tag == "Ground")
                     {
-                        case "Cube":
-                            Instantiate(CubeStatic, new Vector3(raycastHit.point.x, raycastHit.point.y + 0.5f, raycastHit.point.z), Quaternion.identity);
-                            break;
-                        case "Cylinder":
-                            Instantiate(CylinderStatic, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
-                            break;
+                        switch (ActiveBlock)
+                        {
+                            case "Cube":
+                                Instantiate(CubeStatic, new Vector3(raycastHit.point.x, raycastHit.point.y + 0.5f, raycastHit.point.z), Quaternion.identity);
+                                break;
+                            case "Cylinder":
+                                Instantiate(CylinderStatic, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
+                                break;
+                            case "Sphere":
+                                Instantiate(SphereStatic, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
+                                break;
+                        }
+                    }
+                    else 
+                    {
+                        //find center of block face
+                        Vector3 position = raycastHit.transform.position + raycastHit.normal;
+                        //find block rotation
+                        Quaternion rotation = Quaternion.FromToRotation(Vector3.up, raycastHit.normal);
+                        switch (ActiveBlock)
+                        {
+                            case "Cube":
+                                CubeStatic.transform.position = position;
+                                CubeStatic.transform.rotation = rotation;
+                                Instantiate(CubeStatic, position, rotation);
+                                break;
+                            case "Cylinder":
+                                CylinderStatic.transform.position = position;
+                                CylinderStatic.transform.rotation = rotation;
+                                Instantiate(CylinderStatic, position, rotation);
+                                break;
+                            case "Sphere":
+                                SphereStatic.transform.position = position;
+                                SphereStatic.transform.rotation = rotation;
+                                Instantiate(SphereStatic, position, rotation);
+                                break;
+                        }
                     }
                 }
                 //deleting blocks
@@ -103,6 +169,7 @@ public class BlockScript : MonoBehaviour
 
         CubeButton.onClick.AddListener(() => CubeButtonPress());
         CylinderButton.onClick.AddListener(() => CylinderButtonPress());
+        SphereButton.onClick.AddListener(() => SphereButtonPress());
         DeleteButton.onClick.AddListener(() => DeleteButtonPress());
         SelectButton.onClick.AddListener(() => SelectButtonPress());
 
@@ -130,6 +197,13 @@ public class BlockScript : MonoBehaviour
         ActiveBlock = "Cylinder";
         SelectedFunction = "place";
     }
+
+    void SphereButtonPress()
+    {
+        ActiveBlock = "Sphere";
+        SelectedFunction = "place";
+    }
+
 
     void DeleteButtonPress()
     {
