@@ -10,29 +10,29 @@ public class BlockDrag : MonoBehaviour
 
     void OnMouseDown()
     { 
+        //keep object same distance from player
         mouseZ = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        //move object with mouse pointer
         mouseOffset = gameObject.transform.position - GetMouseAsWorldPoint();
     }
 
     private Vector3 GetMouseAsWorldPoint()
     { 
-        //pixel coordinates of mouse (x,y)
+        //pixel coordinates of mouse
         Vector3 mousePoint = Input.mousePosition;
-        // z coordinate of game object on screen
+        //z coordinate of game object on screen
         mousePoint.z = mouseZ;
         //convert it to world points
         return Camera.main.ScreenToWorldPoint(mousePoint);
-
     }
 
     void OnMouseDrag()
     {
         //stop it going through the floor
         float pointer_y = Pointer.transform.position.y;
-        if (pointer_y > 0.8f)
+        if (pointer_y > 0.8f) //only move if above ground and not through floor
         {
             transform.position = GetMouseAsWorldPoint() + mouseOffset;
-        }
-            
+        } 
     }
 }

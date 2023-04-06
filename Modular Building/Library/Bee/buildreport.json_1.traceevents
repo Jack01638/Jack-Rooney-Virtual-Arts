@@ -1,0 +1,500 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1680774805826503, "dur": 875973, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774805826720, "dur": 14668, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774805841390, "dur": 46981, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774805888373, "dur": 341697, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774806230072, "dur": 458382, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774806688455, "dur": 14020, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774806703351, "dur": 10, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1680774806083153, "dur": 130490, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806084065, "dur": 36775, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806199081, "dur": 4397, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806203480, "dur": 10157, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806204079, "dur": 8540, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806217777, "dur": 1110, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680774806217128, "dur": 1776, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774806703444, "dur": 240, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1680774806263048, "dur":1737, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806264788, "dur":28, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1680774806264830, "dur":6, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1680774806264836, "dur":766, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1680774806265660, "dur":765, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806266425, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677556, "dur":229, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677785, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677792, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677792, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677798, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677798, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677802, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677802, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677806, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677806, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677811, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677811, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677815, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677815, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677828, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677829, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677833, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677833, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677837, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677837, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677841, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677842, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677845, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677846, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677850, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677863, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806677875, "dur":1466, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1680774806265667, "dur":764, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806266432, "dur":4253, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806270695, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1680774806270700, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806273835, "dur":1093, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1680774806274933, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1680774806275029, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806275720, "dur":2562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1680774806278284, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1680774806278527, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806279680, "dur":2628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1680774806282375, "dur":39642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806322022, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806322031, "dur":3203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806325305, "dur":22567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806347877, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806347887, "dur":3402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806351399, "dur":34474, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806385879, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806385892, "dur":3261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806389221, "dur":27353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806416578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806416587, "dur":7536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806424209, "dur":61699, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806485912, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806485923, "dur":5093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806491095, "dur":61841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806552941, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806552953, "dur":3486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806556509, "dur":24870, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806581419, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806581431, "dur":3441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806584949, "dur":37796, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806622748, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806622757, "dur":8014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680774806630836, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1680774806630931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806630938, "dur":2855, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1680774806633864, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1680774806633943, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680774806633956, "dur":4940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1680774806638939, "dur":38624, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806265799, "dur":639, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806266438, "dur":4252, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806270695, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1680774806270974, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806273726, "dur":22300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1680774806296095, "dur":26388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806322524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806322534, "dur":3733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806326351, "dur":43837, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806370217, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806370234, "dur":4197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806374536, "dur":29727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806404268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806404279, "dur":3710, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806408072, "dur":53645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806461723, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806461735, "dur":2670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806464485, "dur":26207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806490698, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806490711, "dur":2643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806493430, "dur":40510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806533946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806533959, "dur":7076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806541261, "dur":32443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806573710, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806573722, "dur":5913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806579746, "dur":49091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806628841, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806628849, "dur":5894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680774806634826, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1680774806635108, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680774806635115, "dur":2573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/boot.config" }}
+,{ "pid":12345, "tid":2, "ts":1680774806637806, "dur":39761, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806265726, "dur":708, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806266434, "dur":4308, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806270742, "dur":1271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1680774806272015, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806278801, "dur":2206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1680774806281089, "dur":26331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806307425, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806307567, "dur":8864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806316527, "dur":25938, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806342470, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806342481, "dur":3150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806345834, "dur":26913, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806372785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806372795, "dur":4029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806376885, "dur":25882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806402771, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806402780, "dur":4444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806407327, "dur":56753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806464117, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806464128, "dur":2985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806467185, "dur":25812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806493003, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806493015, "dur":2858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806495962, "dur":41968, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806537935, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806537980, "dur":6050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806544108, "dur":48234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806592349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806592361, "dur":4689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806597109, "dur":42841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806639953, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680774806639959, "dur":5385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680774806645381, "dur":32178, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806265874, "dur":567, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806266442, "dur":4247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806270696, "dur":1389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1680774806272088, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806279797, "dur":1991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1680774806281843, "dur":4665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1680774806286512, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806286520, "dur":5279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1680774806292491, "dur":35188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806327683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806327694, "dur":2532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806330295, "dur":30473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806360774, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806360786, "dur":3373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806364281, "dur":46651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806410936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806410945, "dur":6525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806417565, "dur":25789, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806443360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806443370, "dur":3078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806446536, "dur":22688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806469229, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806469240, "dur":4607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806473914, "dur":25478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806499399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806499411, "dur":2884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806502365, "dur":24564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806526934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806526943, "dur":5698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806532706, "dur":38060, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806570770, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806570780, "dur":2580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806573423, "dur":37186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806610617, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806610631, "dur":3104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806613805, "dur":20848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806634873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680774806634882, "dur":3021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680774806638033, "dur":39531, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806265961, "dur":485, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806266446, "dur":4268, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806270714, "dur":1172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1680774806271888, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806277871, "dur":2118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1680774806280058, "dur":2963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806283026, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806283555, "dur":5816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806289458, "dur":30224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806319689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806319698, "dur":3171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806322946, "dur":24898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806347850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806347862, "dur":3790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806351730, "dur":53504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806405239, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806405249, "dur":3303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806408621, "dur":27026, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806435653, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806435665, "dur":3641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806439369, "dur":25987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806465360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806465370, "dur":2425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806467855, "dur":207234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806675093, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680774806675101, "dur":2397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680774806677538, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1680774806677539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806266042, "dur":409, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806266451, "dur":4236, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806270695, "dur":980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1680774806271678, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806275187, "dur":3207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1680774806278496, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1680774806278664, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806278856, "dur":21664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1680774806300609, "dur":34713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806335328, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806335340, "dur":3821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806339229, "dur":41212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806380448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806380478, "dur":2496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806383038, "dur":26573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806409616, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806409628, "dur":7383, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806417082, "dur":26272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806443360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806443406, "dur":3606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806447072, "dur":25067, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806472144, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806472154, "dur":8084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806480303, "dur":38620, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806518927, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806518938, "dur":5193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806524765, "dur":55128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806579897, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806579907, "dur":5693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806585673, "dur":30848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806616527, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806616539, "dur":6568, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680774806623174, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1680774806623245, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806623251, "dur":5217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1680774806628562, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680774806628629, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806628638, "dur":3468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680774806632356, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680774806632467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680774806632477, "dur":3476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/resources.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680774806636032, "dur":41522, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806266133, "dur":322, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806266455, "dur":4231, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806270695, "dur":1809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1680774806272507, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806274224, "dur":4030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1680774806278564, "dur":312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1680774806278880, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806278889, "dur":4269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1680774806283258, "dur":23251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806306516, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806307281, "dur":2719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806310077, "dur":29019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806339102, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806339144, "dur":2455, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806341681, "dur":195699, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806537385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806537396, "dur":5086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806542549, "dur":33521, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806576074, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806576084, "dur":3958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806580128, "dur":41911, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806622046, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806622058, "dur":7548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680774806629701, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1680774806630007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806630019, "dur":3515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1680774806633649, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1680774806633740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680774806633748, "dur":3442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1680774806637255, "dur":40301, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806266152, "dur":304, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806266457, "dur":4233, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806270695, "dur":515, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1680774806271213, "dur":17, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806274832, "dur":3387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1680774806278292, "dur":694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1680774806278990, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806279336, "dur":2348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1680774806281752, "dur":72629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806354385, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806354394, "dur":22052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806376536, "dur":26155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806402697, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806402708, "dur":4248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806407186, "dur":26138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806433330, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806433341, "dur":3058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806436477, "dur":27366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806463849, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806464681, "dur":10009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806474776, "dur":25955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806500736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806500746, "dur":3443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806504268, "dur":26371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806530644, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806530655, "dur":4786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806535557, "dur":42387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806577948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806577957, "dur":10857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806588897, "dur":46339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806635240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680774806635248, "dur":4175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680774806639497, "dur":38065, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806266226, "dur":233, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806266459, "dur":4284, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806270743, "dur":1118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1680774806271863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806276854, "dur":21417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1680774806298335, "dur":25885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806324225, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806324234, "dur":3328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806327625, "dur":25325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806352954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806352965, "dur":2870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806355971, "dur":31917, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806387933, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806387946, "dur":4040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806392068, "dur":26131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806418204, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806418216, "dur":2639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806420923, "dur":23721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806444648, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806444656, "dur":6605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806451326, "dur":29502, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806480832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806480843, "dur":3136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806484051, "dur":28146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806512215, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806512229, "dur":3623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806515940, "dur":32288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806548234, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806548248, "dur":3787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806552096, "dur":36543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806588643, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806588652, "dur":5511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806594257, "dur":37417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806631680, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680774806631692, "dur":3354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680774806635120, "dur":42438, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806266312, "dur":150, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806266462, "dur":4227, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806270696, "dur":1064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1680774806271794, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806275167, "dur":3209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1680774806278468, "dur":861, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1680774806279333, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806279343, "dur":2768, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1680774806282167, "dur":1100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building.exe" }}
+,{ "pid":12345, "tid":10, "ts":1680774806283272, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806283280, "dur":6653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building.exe" }}
+,{ "pid":12345, "tid":10, "ts":1680774806290011, "dur":31468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806321484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806321494, "dur":2466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806324046, "dur":30107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806354158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806354168, "dur":3471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806357719, "dur":23570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806381293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806381302, "dur":2400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806383788, "dur":22864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806406657, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806406666, "dur":2523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806409257, "dur":60326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806469587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806469597, "dur":3054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806472722, "dur":27285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806500012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806500023, "dur":4956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806505043, "dur":34882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806539931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806539949, "dur":4617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806544626, "dur":43985, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806588616, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806588627, "dur":7051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806595769, "dur":21012, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806616785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806616796, "dur":5591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680774806622467, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1680774806622561, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806622651, "dur":7274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":10, "ts":1680774806630019, "dur":295, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":10, "ts":1680774806630319, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806630328, "dur":2394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":10, "ts":1680774806632786, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/level0.resS" }}
+,{ "pid":12345, "tid":10, "ts":1680774806632852, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680774806632858, "dur":2834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/level0.resS" }}
+,{ "pid":12345, "tid":10, "ts":1680774806635797, "dur":41760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806266388, "dur":78, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806266466, "dur":4248, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806270715, "dur":1082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1680774806271800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806276080, "dur":2695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1680774806278853, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1680774806279024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806279063, "dur":4602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1680774806283706, "dur":27102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806310813, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806310935, "dur":2766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806313767, "dur":26941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806340713, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806340722, "dur":2945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806343750, "dur":66510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806410265, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806410275, "dur":2605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806412944, "dur":31393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806444342, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806444351, "dur":3740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806448181, "dur":29808, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806477994, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806478004, "dur":3880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806481958, "dur":28497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806510462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806510474, "dur":7504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806518075, "dur":30932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806549012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806549022, "dur":6281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806555393, "dur":31714, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806587112, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806587123, "dur":5884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806593073, "dur":36203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806629279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806629288, "dur":3602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680774806632965, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/level0" }}
+,{ "pid":12345, "tid":11, "ts":1680774806633035, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680774806633042, "dur":4970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/level0" }}
+,{ "pid":12345, "tid":11, "ts":1680774806638096, "dur":39464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806266408, "dur":61, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806266469, "dur":4219, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806270695, "dur":1672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1680774806272370, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806273959, "dur":4404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1680774806278459, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1680774806278840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806278993, "dur":3166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1680774806282220, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1680774806282320, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806282988, "dur":11833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":12, "ts":1680774806294955, "dur":23401, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806318362, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806318371, "dur":3987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806322426, "dur":25737, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806348168, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806348178, "dur":3052, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806351303, "dur":31877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806383184, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806383193, "dur":3555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806386827, "dur":29237, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806416071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806416083, "dur":5077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806421220, "dur":31738, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806452963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806452974, "dur":2661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806455702, "dur":68974, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806524680, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806524691, "dur":6031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806530787, "dur":31933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806562739, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806563008, "dur":6595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806569760, "dur":30701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806600467, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806600481, "dur":2830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806603373, "dur":31074, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806634726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680774806634736, "dur":3330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Jackr/OneDrive/Documents/GitHub/Jack-Rooney-Virtual-Arts/Modular Building_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680774806638143, "dur":39418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680774806680758, "dur":1782, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1680774806703762, "dur": 713, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680774806703341, "dur": 1167, "ph": "X", "name": "Write chrome-trace events", "args": {} },

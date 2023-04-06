@@ -8,6 +8,7 @@ public class BlockScript : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
 
+    [Header("Game Objects")]
     public GameObject Cube;
     public GameObject Cylinder;
     public GameObject CubeStatic;
@@ -15,16 +16,21 @@ public class BlockScript : MonoBehaviour
     public GameObject SphereStatic;
     public GameObject Sphere;
 
+    //logic variables
     private string ActiveBlock = "Cube"; //this will hold which block to place depending on button pressed. by default its Cube
-    private bool ToggleStatus = true;
+    private bool ToggleStatus = true; //toggle between gravity and static blocks, default is dynamic
     private string SelectedFunction = "place"; //default is to place blocks
+    bool clicked = false; //helps allow only 1 click of buttons at a time
+    bool firstSelect = true; //used to help toggle selected block material
 
+    [Header("Object Buttons")]
     public Button CubeButton;
     public Button CylinderButton;
     public Button DeleteButton;
     public Button SelectButton;
     public Button SphereButton;
 
+    [Header("Size Buttons")]
     public Button PlusX;
     public Button MinusX;
     public Button PlusY;
@@ -32,29 +38,35 @@ public class BlockScript : MonoBehaviour
     public Button PlusZ;
     public Button MinusZ;
 
+    [Header("Text")]
     public TextMeshProUGUI ToggleText;
+    public TextMeshProUGUI FunctionText;
     private GameObject SelectedObject;
+    private GameObject TempSelectedObject;
 
-    bool clicked = false;
+    [Header("Materials")]
+    public Material SelectedMaterial;
+    public Material DefaultBlockMaterial;
 
     private void Update()
     {
-        //check if clicking on any UI objects or not
-        bool OverUI = false;
-        //detecting where mouse is
-        //Debug.Log(Input.mousePosition);
+        //detecting where the mouse is
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
         {
+            if (raycastHit.transform.tag == "UI")
+            {
+                Debug.Log("UI HIT");
+            }
             //moving visual mouse pointer
             transform.position = raycastHit.point;
             //check for left click
             if (Input.GetMouseButtonDown(0))
             {
                 //Debug.Log("Left Click");
-                if (ToggleStatus == true && SelectedFunction == "place" && OverUI == false)
+                if (ToggleStatus == true && SelectedFunction == "place") //dynamic gravity blocks
                 {
-                    //if placed on the ground, place where looking
+                    //if placed on the ground, place where user is looking
                     if (raycastHit.transform.tag == "Ground")
                         switch (ActiveBlock)
                         {
@@ -68,7 +80,7 @@ public class BlockScript : MonoBehaviour
                                 Instantiate(Sphere, new Vector3(raycastHit.point.x, raycastHit.point.y + 1, raycastHit.point.z), Quaternion.identity);
                                 break;
                         }
-                    else 
+                    else if (raycastHit.transform.tag != "Ground")//placed on another object
                     {
                         //find center of block face
                         Vector3 position = raycastHit.transform.position + raycastHit.normal;
@@ -90,12 +102,11 @@ public class BlockScript : MonoBehaviour
                                 Sphere.transform.position = position;
                                 Sphere.transform.rotation = rotation;
                                 Instantiate(Sphere, position, rotation);
-                                
                                 break;
                         }
                     }
                 }
-                if (ToggleStatus == false && SelectedFunction == "place" && OverUI == false)
+                if (ToggleStatus == false && SelectedFunction == "place") //static non gravity blocks
                 {
                     if (raycastHit.transform.tag == "Ground")
                     {
@@ -112,7 +123,7 @@ public class BlockScript : MonoBehaviour
                                 break;
                         }
                     }
-                    else 
+                    else if (raycastHit.transform.tag != "Ground")
                     {
                         //find center of block face
                         Vector3 position = raycastHit.transform.position + raycastHit.normal;
@@ -138,42 +149,56 @@ public class BlockScript : MonoBehaviour
                         }
                     }
                 }
+
                 //deleting blocks
                 if (raycastHit.collider.tag == "Block" && SelectedFunction == "delete")
                 {
-                    string objectname = raycastHit.collider.gameObject.name;
-                    Debug.Log(objectname);
+                    //string objectname = raycastHit.collider.gameObject.name;
+                    //Debug.Log(objectname);
                     Destroy(raycastHit.transform.gameObject);
                 }
 
+                //selecting blocks
                 if (raycastHit.collider.tag == "Block" && SelectedFunction == "select")
                 {
-                    string objectname = raycastHit.collider.gameObject.name;
-                    Debug.Log(objectname);
-                    SelectedObject = raycastHit.transform.gameObject;
-    
-                   // Vector3 newScale = SelectedObject.transform.localScale;
-                    //newScale.x += 2f;
-                   // SelectedObject.transform.localScale = newScale;
+
+                    //string objectname = raycastHit.collider.gameObject.name;
+                    Debug.Log(firstSelect);
+                    
+                    if (firstSelect == true) //if its first time selected, just set to selected block
+                    {
+                        SelectedObject = raycastHit.transform.gameObject;
+                        SelectedObject.GetComponent<MeshRenderer>().material = SelectedMaterial;
+                        TempSelectedObject = SelectedObject;
+                        firstSelect = false;
+                    }
+
+                    else if (firstSelect == false) //once TempSelectedObject is given a value:
+                    {
+                        SelectedObject = raycastHit.transform.gameObject;
+                        TempSelectedObject.GetComponent<MeshRenderer>().material = DefaultBlockMaterial;
+                        SelectedObject.GetComponent<MeshRenderer>().material = SelectedMaterial;
+                        TempSelectedObject = SelectedObject;
+                    }
                 }
 
             }
         }
 
+        //toggle static/dynamic(gravity) blocks
         if (Input.GetKeyDown("q"))
         {
-            Debug.Log("q pressed");
+           // Debug.Log("q pressed");
             Toggle(ToggleStatus);
         }
        
-
+        //Buttons
         CubeButton.onClick.AddListener(() => CubeButtonPress());
         CylinderButton.onClick.AddListener(() => CylinderButtonPress());
         SphereButton.onClick.AddListener(() => SphereButtonPress());
         DeleteButton.onClick.AddListener(() => DeleteButtonPress());
         SelectButton.onClick.AddListener(() => SelectButtonPress());
 
-        
         PlusX.onClick.AddListener(() => Scale(SelectedObject, "X","P"));
         MinusX.onClick.AddListener(() => Scale(SelectedObject, "X", "N"));
         PlusY.onClick.AddListener(() => Scale(SelectedObject, "Y", "P"));
@@ -181,7 +206,7 @@ public class BlockScript : MonoBehaviour
         PlusZ.onClick.AddListener(() => Scale(SelectedObject, "Z", "P"));
         MinusZ.onClick.AddListener(() => Scale(SelectedObject, "Z", "N"));
 
-        clicked = false;
+        clicked = false; //Reset clicked value to allow future button presses
         
     }
 
@@ -190,52 +215,54 @@ public class BlockScript : MonoBehaviour
     {
         ActiveBlock = "Cube";
         SelectedFunction = "place";
+        FunctionText.text = "Selected\nFunction:\nPlace Cube";
     }
 
     void CylinderButtonPress()
     {
         ActiveBlock = "Cylinder";
         SelectedFunction = "place";
+        FunctionText.text = "Selected\nFunction:\nPlace Tube";
     }
 
     void SphereButtonPress()
     {
         ActiveBlock = "Sphere";
         SelectedFunction = "place";
+        FunctionText.text = "Selected\nFunction:\nPlace Sphere";
     }
 
 
     void DeleteButtonPress()
     {
         SelectedFunction = "delete";
+        FunctionText.text = "Selected\nFunction:\nDelete";
     }
 
     void SelectButtonPress()
     {
         SelectedFunction = "select";
+        FunctionText.text = "Selected\nFunction:\nSelect";
     }
 
-    void Toggle(bool ToggleStatuscheck)
+    void Toggle(bool ToggleStatuscheck) //toggle between static/dynamic(gravity) blocks
     {
-       // switch(ToggleStatuscheck)
-        //true = dynamic blocks
-        if (ToggleStatuscheck == true)
+        if (ToggleStatuscheck == true) //static
         {
+            //Debug.Log("set to static");
+            ToggleText.text = "Current Toggle:\nStatic";
             ToggleStatus = false;
-            Debug.Log("set to static");
-            ToggleText.text = "Current Toggle: Static";
         }
-        //false = static blocks
-        if (ToggleStatuscheck == false)
+
+        if (ToggleStatuscheck == false) //dynamic blocks
         {
+            //Debug.Log("set to dynamic");
+            ToggleText.text = "Current Toggle:\nDynamic";
             ToggleStatus = true;
-            Debug.Log("set to dynamic");
-            ToggleText.text = "Current Toggle: Dynamic";
         }
     }
 
     //pass in the object being scaled, which axis to scale on and if its +ve or -ve
-    
     void Scale(GameObject tempObject, string axis, string sign)
     {
         if (!clicked)
@@ -245,11 +272,11 @@ public class BlockScript : MonoBehaviour
             {
                 if (sign == "P")
                 {
-                    newScale.x += 1.0f;
+                    newScale.x += 0.5f;
                 }
                 if (sign == "N")
                 {
-                    newScale.x -= 1.0f;
+                    newScale.x -= 0.5f;
                 }
             }
 
@@ -257,11 +284,11 @@ public class BlockScript : MonoBehaviour
             {
                 if (sign == "P")
                 {
-                    newScale.y += 1.0f;
+                    newScale.y += 0.5f;
                 }
                 if (sign == "N")
                 {
-                    newScale.y -= 1.0f;
+                    newScale.y -= 0.5f;
                 }
             }
 
@@ -269,11 +296,11 @@ public class BlockScript : MonoBehaviour
             {
                 if (sign == "P")
                 {
-                    newScale.z += 1.0f;
+                    newScale.z += 0.5f;
                 }
                 if (sign == "N")
                 {
-                    newScale.z -= 1.0f;
+                    newScale.z -= 0.5f;
                 }
             }
 

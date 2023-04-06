@@ -13,12 +13,13 @@ public class PlayerCamera : MonoBehaviour
 
     float xRotation;
     float yRotation;
+
     // Start is called before the first frame update
     private void Start()
     {
+        //allow mouse to move camera and make cursor invisible
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        //in update, set this to unlocked and visable when esc toggled to access UI
     }
 
     // Update is called once per frame
@@ -35,12 +36,12 @@ public class PlayerCamera : MonoBehaviour
             xRotation -= mouseY;
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-            //
+            //allow head rotation
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         }
         
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape)) //unlock camera and allow UI clicking
         {
             //not been pressed yet, game active and mouse locked
             if (escPressed == false)
